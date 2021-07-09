@@ -6,7 +6,7 @@ class User extends Person {
     private $username;
     private $password;
     protected $orders;
-    private $discount;
+    protected $discount;
     private $wallet;
 
     //constructor

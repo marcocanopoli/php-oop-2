@@ -1,6 +1,5 @@
 <main>
     <?php 
-    // require_once __DIR__ . '/../classes/user/Person.php'; 
     require_once __DIR__ . '/../classes/user/PremiumUser.php';
     require_once __DIR__ . '/../classes/CreditCard.php'; 
     require_once __DIR__ . '/../classes/product/Product.php';    
@@ -14,7 +13,11 @@
     $wallet_1->setBalance(150);
     $wallet_1->addCard('American Express', $card_1);
     $premiumUser->setWallet($wallet_1);
-    var_dump($premiumUser);
-    var_dump($premiumUser->getWallet());
     ?>
+
+    <h2>User</h2>
+    <div><?php var_dump($premiumUser); ?></div>
+    
+    <h2>Wallet</h2>
+    <div><?php var_dump($premiumUser->getWallet()); ?></div>    
 </main>
